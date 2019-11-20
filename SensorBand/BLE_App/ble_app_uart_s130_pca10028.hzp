@@ -1,0 +1,156 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="ble_app_uart_s130_pca10028" target="8" version="2">
+  <project Name="ble_app_uart_s130_pca10028">
+    <configuration
+      Name="Common"
+      Placement="Flash"
+      Target="nRF51822_xxAA"
+      arm_architecture="v6M"
+      arm_core_type="Cortex-M0"
+      arm_fpu_type="None"
+      arm_gcc_target="arm-unknown-eabi"
+      arm_linker_heap_size="0"
+      arm_linker_stack_size="2048"
+      arm_simulator_memory_simulation_filename="$(TargetsDir)/nRF51/nRF51SimulatorMemory.dll"
+      arm_simulator_memory_simulation_parameter="nRF51822;0x40000;0x4000"
+      arm_target_interface_type="SWD"
+      arm_target_loader_applicable_loaders="Flash"
+      arm_target_loader_default_loader="Flash"
+      c_additional_options="-fms-extensions"
+      c_preprocessor_definitions="STARTUP_FROM_RESET;BLE_STACK_SUPPORT_REQD;BOARD_CUSTOM;S130;NRF51;SOFTDEVICE_PRESENT;SWI_DISABLE0;BSP_SIMPLE"
+      c_user_include_directories=".;..;../Common;../Flux/Include;$(PackagesDir)/CMSIS_4/CMSIS/Include;../nRF5_SDK_11.0.0_89a8197/examples/dfu/bootloader/config;../nRF5_SDK_11.0.0_89a8197/examples/dfu/bootloader/config/ble_app_hrs_s130_with_dfu_pca10028;../nRF5_SDK_11.0.0_89a8197/examples/ble_peripheral/ble_app_hrs/config;../nRF5_SDK_11.0.0_89a8197/examples/dfu/bootloader/config/dfu_dual_bank_ble_s130_pca10028;../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_dfu;../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_dis;../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_hrs;../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_bas;../nRF5_SDK_11.0.0_89a8197/components/ble/ble_advertising;../nRF5_SDK_11.0.0_89a8197/components/ble/device_manager;../nRF5_SDK_11.0.0_89a8197/components/ble/ble_radio_notification;../nRF5_SDK_11.0.0_89a8197/components/ble/common;../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/gpiote;../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/uart;../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/common;../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/config;../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/delay;../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/hal;../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/pstorage;../nRF5_SDK_11.0.0_89a8197/components/libraries/uart;../nRF5_SDK_11.0.0_89a8197/components/libraries/fifo;../nRF5_SDK_11.0.0_89a8197/components/libraries/experimental_section_vars;../nRF5_SDK_11.0.0_89a8197/components/libraries/fstorage;../nRF5_SDK_11.0.0_89a8197/components/libraries/fstorage/config;../nRF5_SDK_11.0.0_89a8197/components/libraries/sensorsim;../nRF5_SDK_11.0.0_89a8197/components/libraries/button;../nRF5_SDK_11.0.0_89a8197/components/libraries/trace;../nRF5_SDK_11.0.0_89a8197/components/libraries/bootloader_dfu;../nRF5_SDK_11.0.0_89a8197/components/libraries/bootloader_dfu/ble_transport;../nRF5_SDK_11.0.0_89a8197/components/libraries/crc16;../nRF5_SDK_11.0.0_89a8197/components/libraries/hci;../nRF5_SDK_11.0.0_89a8197/components/libraries/scheduler;../nRF5_SDK_11.0.0_89a8197/components/libraries/timer;../nRF5_SDK_11.0.0_89a8197/components/libraries/util;../nRF5_SDK_11.0.0_89a8197/components/softdevice/common/softdevice_handler;../nRF5_SDK_11.0.0_89a8197/components/softdevice/s130/headers;../nRF5_SDK_11.0.0_89a8197/components/softdevice/s130/headers/nrf51;../nRF5_SDK_11.0.0_89a8197/components/toolchain;../nRF5_SDK_11.0.0_89a8197/examples/bsp;../nRF5_SDK_11.0.0_89a8197/components/device;../nRF5_SDK_11.0.0_89a8197/components/toolchain/CMSIS/Include;../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_nus"
+      debug_additional_load_file="../nRF5_SDK_11.0.0_89a8197/components/softdevice/s130/hex/s130_nrf51_2.0.0_softdevice.hex"
+      debug_additional_load_file_address="0x00000000"
+      debug_additional_load_file_type="ihex"
+      debug_entry_point_symbol="doesnotexist"
+      debug_initial_breakpoint_set_option="Always"
+      debug_register_definition_file="$(TargetsDir)/nRF51/nRF51_Peripherals.xml"
+      debug_start_from_entry_point_symbol="No"
+      gcc_omit_frame_pointer="No"
+      gcc_optimization_level="None"
+      linker_memory_map_file="$(TargetsDir)/nRF51/nRF51822_xxAA_MemoryMap.xml"
+      linker_output_format="hex"
+      linker_section_placement_file="../Common/APP_section_placement_with_DFU+S130.xml"
+      linker_section_placement_macros="PSTORAGE_NVM_START=(0x3C000-0x10C00);PSTORAGE_NVM_SETTINGS=(0x3C000-0xC00);BOOTLOADER_START=0x3C000;NO_INIT_APP = (0x20004000 - 0x100);NO_INIT_BOOT = (0x20004000 - 0x80)"
+      package_dependencies="nRF51"
+      project_directory=""
+      project_type="Executable"
+      property_groups_file_path="$(TargetsDir)/nRF51/propertyGroups.xml"
+      target_get_partname_script="GetPartName()"
+      target_reset_script="Reset()"
+      target_script_file="$(TargetsDir)/nRF51/nRF51_Target.js" />
+    <configuration
+      Name="Flash"
+      arm_target_flash_loader_file_path="$(TargetsDir)/nRF51/Release/Loader.elf"
+      arm_target_loader_can_erase_all="Yes"
+      arm_target_loader_can_lock_all="No"
+      arm_target_loader_can_lock_range="No"
+      arm_target_loader_can_unlock_all="No"
+      arm_target_loader_can_unlock_range="No"
+      target_reset_script="FLASHReset()" />
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+    </folder>
+    <folder Name="System Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+      <file file_name="../Common/nRF51822_xxAA_MemoryMap.xml" />
+      <file file_name="../Common/APP_section_placement_with_DFU+S130.xml" />
+      <file file_name="../Common/nRF51_Startup.s" />
+    </folder>
+    <folder Name="Application">
+      <file file_name="main.c" />
+      <file file_name="Config.h" />
+      <file file_name="HardwareProfile.h" />
+      <file file_name="nrf_drv_config.h" />
+      <file file_name="pstorage_platform.h" />
+      <file file_name="../Common/custom_board.h" />
+      <file file_name="../Common/HardwareProfile-SensorBand.h" />
+      <file file_name="softdevice_handler.c" />
+      <file file_name="../Common/Analog.c" />
+      <file file_name="../Flux/src/Peripherals/LIS3DH.c" />
+      <file file_name="../Flux/include/Peripherals/LIS3DH.h" />
+      <file file_name="../Flux/src/Peripherals/SysTime-minimal.c" />
+      <file file_name="device_manager_cnfg.h" />
+      <file file_name="../Common/acc_tasks.c" />
+      <file file_name="../Common/acc_tasks.h" />
+      <file file_name="../Common/ble_serial.c" />
+      <file file_name="../Common/EpochCalc.c" />
+      <file file_name="../Common/EpochCalc.h" />
+      <file file_name="../Common/ble_serial.h" />
+      <file file_name="../Flux/src/Utils/Queue.c" />
+      <file file_name="../Flux/include/Utils/Queue.h" />
+      <file file_name="../Common/Analog.h" />
+      <file file_name="../Common/AsciiHex.c" />
+      <file file_name="../Common/AsciiHex.h" />
+    </folder>
+    <folder Name="Board Support" />
+    <folder Name="Device">
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/toolchain/system_nrf51.c" />
+    </folder>
+    <folder Name="nRF_BLE">
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/common/ble_advdata.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/ble_advertising/ble_advertising.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/common/ble_conn_params.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_nus/ble_nus.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/common/ble_srv_common.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_bas/ble_bas.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/device_manager/device_manager_peripheral.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/device_manager/device_manager.h" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_dis/ble_dis.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/ble/ble_services/ble_dis/ble_dis.h" />
+    </folder>
+    <folder Name="nRF_Drivers">
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/delay/nrf_delay.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/common/nrf_drv_common.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/gpiote/nrf_drv_gpiote.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/drivers_nrf/pstorage/pstorage.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/timer/app_timer_appsh.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/timer/app_timer_appsh.h" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/scheduler/app_scheduler.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/scheduler/app_scheduler.h" />
+    </folder>
+    <folder Name="nRF_Libraries">
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/util/app_error.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/util/app_error_weak.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/fifo/app_fifo.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/timer/app_timer.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/util/app_util_platform.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/fstorage/fstorage.c" />
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/libraries/util/nrf_assert.c" />
+    </folder>
+    <folder Name="nRF_SoftDevice">
+      <file file_name="../nRF5_SDK_11.0.0_89a8197/components/softdevice/s130/doc/s130_nrf51_2.0.0_licence_agreement.txt" />
+    </folder>
+    <configuration
+      Name="Debug"
+      c_preprocessor_definitions="DEBUG;_DEBUG;__DEBUG"
+      gcc_optimization_level="Debug" />
+    <configuration
+      Name="Release"
+      build_debug_information="No"
+      gcc_optimization_level="Optimize For Size" />
+  </project>
+  <configuration Name="THUMB Debug" inherited_configurations="THUMB;Debug" />
+  <configuration
+    Name="THUMB"
+    Platform="ARM"
+    arm_instruction_set="Thumb"
+    arm_library_instruction_set="Thumb"
+    c_preprocessor_definitions="__THUMB"
+    hidden="Yes" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None"
+    hidden="Yes" />
+  <configuration
+    Name="THUMB Release"
+    inherited_configurations="THUMB;Release" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="Level 1"
+    gcc_optimization_level="Level 1"
+    hidden="Yes" />
+</solution>

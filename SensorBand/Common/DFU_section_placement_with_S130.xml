@@ -1,0 +1,82 @@
+<!DOCTYPE Linker_Placement_File>
+<Root name="Flash Section Placement">
+  <MemorySegment name="$(FLASH_NAME:FLASH)">
+	<ProgramSection alignment="0x100" load="Yes" name=".S130_SoftDevice" start="0x0000" size="0x1B000" />  
+	<!--ProgramSection alignment="0x100" load="Yes" name=".reserved_for_app" start="0x1B000" size="0x1D000" /-->  
+	<!-- The bootloader application region starts here at 0x38000 -->
+	<ProgramSection alignment="0x100" load="Yes" name=".vectors" start="$(BOOTLOADER_START:)" />
+	<ProgramSection alignment="4" load="Yes" name=".init" />
+	<ProgramSection alignment="4" load="Yes" name=".init_rodata" />
+	<ProgramSection alignment="4" load="Yes" name=".text" />
+	<ProgramSection alignment="4" load="Yes" name=".dtors" />
+	<ProgramSection alignment="4" load="Yes" name=".ctors" />
+	<ProgramSection alignment="4" load="Yes" name=".rodata" />
+	<ProgramSection alignment="4" load="Yes" name=".ARM.exidx" address_symbol="__exidx_start" end_symbol="__exidx_end" />
+	<ProgramSection alignment="4" load="Yes" runin=".fast_run" name=".fast" />
+	<ProgramSection alignment="4" load="Yes" runin=".data_run" name=".data" />
+	<ProgramSection alignment="4" load="Yes" runin=".tdata_run" name=".tdata" />
+	<ProgramSection alignment="4" load="No" name=".bootloaderSettings" start="0x0003FC00" size="0x0400"  />	
+  </MemorySegment>
+  <MemorySegment name="$(RAM_NAME:RAM);SRAM">
+	<ProgramSection alignment="0x100" load="No" name=".S130_RAM" start="0x20000000" size="0x2C00" />  
+	<!--ProgramSection alignment="0x100" load="No" name=".vectors_ram" start="0x20002C00" /-->
+	<ProgramSection alignment="4" load="No" name=".fast_run" />
+	<ProgramSection alignment="4" load="No" name=".data_run" />
+	<ProgramSection alignment="4" load="No" name=".tdata_run" />
+	<ProgramSection alignment="4" load="No" name=".bss" />
+	<ProgramSection alignment="4" load="No" name=".tbss" />
+	<ProgramSection alignment="4" load="No" name=".non_init" />
+	<ProgramSection alignment="4" size="__HEAPSIZE__" load="No" name=".heap" />
+	<ProgramSection alignment="8" size="__STACKSIZE__" load="No" name=".stack" />
+	<ProgramSection alignment="8" size="__STACKSIZE_PROCESS__" load="No" name=".stack_process" />
+	<ProgramSection alignment="4" load="No" name=".rtc_state" start="$(NO_INIT_APP:)" size="0x80" />
+	<ProgramSection alignment="4" load="No" name=".noinit" start="$(NO_INIT_BOOT:)" size="0x80" />
+	<!-- The bootloader uses the last 128 bytes of the no-init section. Remainder is for application e.g. RTC state -->
+   </MemorySegment>
+  <MemorySegment name="UICR">
+	<ProgramSection alignment="4" load="Yes" name=".uicr_start" start="0x10001000" size="0x100"/>
+  </MemorySegment>	
+  <MemorySegment name="$(FLASH2_NAME:FLASH2)">
+	<ProgramSection alignment="4" load="Yes" name=".text2" />
+	<ProgramSection alignment="4" load="Yes" name=".rodata2" />
+	<ProgramSection alignment="4" load="Yes" runin=".data2_run" name=".data2" />
+  </MemorySegment>
+  <MemorySegment name="$(RAM2_NAME:RAM2)">
+	<ProgramSection alignment="4" load="No" name=".data2_run" />
+	<ProgramSection alignment="4" load="No" name=".bss2" />
+  </MemorySegment>
+  
+</Root>
+<!--
+Summary of versioning and memory allocation:
+Using SDK v11.0.0, Release date: Week 10, 2016
+Hardware platform: Sensor-Band (Mii Band clone)
+Device target: NRF51822-QFAAH00 (0x0072, rev:3.0)
+Memory summary: 16kB RAM + 256kB ROM
+Soft device used: S130v2.0.0 from SDKv11.0.0
+Bootloader: Based on BLE-DFU rev:0.8
+N.b. 'RAM' implies base address of 0x20000000
+
+Address space settings:
+
+Master Boot Record:
+ROM: 0x0 -> 0x1000, 4kB
+RAM: 0x0 -> 0x8, Always used by soft device
+UICR: 0x10001014, contains dfu app address
+
+Soft Device, S130 (see S130v2 spec.): 
+ROM: 0x1000 -> 0x1B000 (104kB)
+RAM: 0x0 -> App dependent, used if enabled, min. 0x13C8 (5.1kB)
+
+Application:
+ROM:
+Vectors: 0x1B000 -> 0x1B100, 192 byte vector table
+Application: 0x1B100 -> 0x38000, 116kB
+
+Bootloader:
+ROM:
+Vectors: 0x38000, 192 byte vector table 
+Bootloader: 0x38100 -> 0x3FC00, 31kB (can reduce if optimised)
+Settings, 0x3FC00 -> 0x40000, 1kB (last flash block used by DFU)
+ 
+-->
