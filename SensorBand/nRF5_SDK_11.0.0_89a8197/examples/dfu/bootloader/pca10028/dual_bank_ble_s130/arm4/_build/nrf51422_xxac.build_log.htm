@@ -1,0 +1,140 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A Student Microsoft, Microsoft, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TARMCM1.DLL V1.10.0.0
+ 
+<h2>Project:</h2>
+C:\Projects\SensorBand\Firmware\nRF5_SDK_11.0.0_89a8197\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm4\dfu_dual_bank_ble_s130_pca10028.uvproj
+Project File Date:  05/04/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf51422_xxac'
+Clean started - Project: 'dfu_dual_bank_ble_s130_pca10028'
+   deleting intermediate output files for target 'nrf51422_xxac'
+compiling dfu_ble_svc.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\dfu_ble_svc.c: 0 warnings, 1 error
+compiling main.c...
+..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h(22): error:  #35: #error directive: "Make locally"
+  #error "Make locally"
+..\..\..\main.c: 0 warnings, 1 error
+assembling arm_startup_nrf51.s...
+compiling system_nrf51.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\toolchain\system_nrf51.c: 0 warnings, 1 error
+compiling ble_advdata.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\ble\common\ble_advdata.c: 0 warnings, 1 error
+compiling ble_conn_params.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\ble\common\ble_conn_params.c: 0 warnings, 1 error
+compiling ble_dfu.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\ble\ble_services\ble_dfu\ble_dfu.c: 0 warnings, 1 error
+compiling ble_srv_common.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\ble\common\ble_srv_common.c: 0 warnings, 1 error
+compiling nrf_delay.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.c: 0 warnings, 1 error
+compiling nrf_drv_common.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\drivers_nrf\common\nrf_drv_common.c: 0 warnings, 1 error
+compiling pstorage_raw.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage_raw.c: 0 warnings, 1 error
+compiling app_error.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\libraries\util\app_error.c: 0 warnings, 1 error
+compiling app_error_weak.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\libraries\util\app_error_weak.c: 0 warnings, 1 error
+compiling app_scheduler.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c: 0 warnings, 1 error
+compiling app_timer.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\libraries\timer\app_timer.c: 0 warnings, 1 error
+compiling app_timer_appsh.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\libraries\timer\app_timer_appsh.c: 0 warnings, 1 error
+compiling app_util_platform.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\libraries\util\app_util_platform.c: 0 warnings, 1 error
+compiling bootloader.c...
+..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h(22): error:  #35: #error directive: "Make locally"
+  #error "Make locally"
+..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader.c: 0 warnings, 1 error
+compiling bootloader_settings.c...
+..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h(22): error:  #35: #error directive: "Make locally"
+  #error "Make locally"
+..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_settings.c: 0 warnings, 1 error
+compiling bootloader_util.c...
+compiling crc16.c...
+compiling dfu_dual_bank.c...
+..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h(22): error:  #35: #error directive: "Make locally"
+  #error "Make locally"
+..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_dual_bank.c: 0 warnings, 1 error
+compiling dfu_init_template.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_init_template.c: 0 warnings, 1 error
+compiling dfu_transport_ble.c...
+..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h(22): error:  #35: #error directive: "Make locally"
+  #error "Make locally"
+..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_transport_ble.c: 0 warnings, 1 error
+compiling hci_mem_pool.c...
+compiling nrf_assert.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\libraries\util\nrf_assert.c: 0 warnings, 1 error
+compiling softdevice_handler.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.c: 0 warnings, 1 error
+compiling softdevice_handler_appsh.c...
+..\..\..\..\..\..\components\device\nrf51.h(119): error:  #5: cannot open source input file "core_cm0.h": No such file or directory
+  #include "core_cm0.h"                               /*!< Cortex-M0 processor and core peripherals                              */
+..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.c: 0 warnings, 1 error
+".\_build\nrf51422_xxac.axf" - 24 Error(s), 0 Warning(s).
+
+*** Performing Cross-Module-Optimization:
+*** Feedback file '.\_build\nrf51422_xxac.fed' not found.
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

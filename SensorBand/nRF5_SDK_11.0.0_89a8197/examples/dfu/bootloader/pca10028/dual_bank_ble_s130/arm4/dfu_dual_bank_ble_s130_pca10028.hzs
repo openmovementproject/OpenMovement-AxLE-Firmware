@@ -1,0 +1,103 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints>
+  <BreakpointListItem line="26" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="2" counter="0" isFunctionBreakpoint="false" filename="../../../../../../components/libraries/util/app_error_weak.c" expression="" />
+  <BreakpointListItem line="202" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="2" counter="0" isFunctionBreakpoint="false" filename="../../../main.c" expression="" />
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow addressText="" bufferWidth="-1" bufferHeight="-1" addressSpace="" />
+ </FrameBufferWindow>
+ <Memory1>
+  <MemoryWindow autoEvaluate="0" addressText="0000" addressOrder="0" refreshPeriod="0" columnsText="" sizeText="" viewMode="0" dataSize="1" radix="16" name="dfu_dual_bank_ble_s130_pca10028" addressSpace="" />
+ </Memory1>
+ <Memory2>
+  <MemoryWindow autoEvaluate="0" addressText="" addressOrder="0" refreshPeriod="0" columnsText="" sizeText="" viewMode="0" dataSize="1" radix="16" name="dfu_dual_bank_ble_s130_pca10028" addressSpace="" />
+ </Memory2>
+ <Memory3>
+  <MemoryWindow autoEvaluate="0" addressText="" addressOrder="0" refreshPeriod="0" columnsText="" sizeText="" viewMode="0" dataSize="1" radix="16" name="dfu_dual_bank_ble_s130_pca10028" addressSpace="" />
+ </Memory3>
+ <Memory4>
+  <MemoryWindow autoEvaluate="0" addressText="" addressOrder="0" refreshPeriod="0" columnsText="" sizeText="" viewMode="0" dataSize="1" radix="16" name="dfu_dual_bank_ble_s130_pca10028" addressSpace="" />
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="dfu_dual_bank_ble_s130_pca10028" name="unnamed" />
+  <ProjectSessionItem path="dfu_dual_bank_ble_s130_pca10028;dfu_dual_bank_ble_s130_pca10028" name="unnamed" />
+  <ProjectSessionItem path="dfu_dual_bank_ble_s130_pca10028;dfu_dual_bank_ble_s130_pca10028;Application" name="unnamed" />
+  <ProjectSessionItem path="dfu_dual_bank_ble_s130_pca10028;dfu_dual_bank_ble_s130_pca10028;nRF_Libraries" name="unnamed" />
+  <ProjectSessionItem path="dfu_dual_bank_ble_s130_pca10028;dfu_dual_bank_ble_s130_pca10028;nRF_SoftDevice" name="unnamed" />
+  <ProjectSessionItem path="dfu_dual_bank_ble_s130_pca10028;dfu_dual_bank_ble_s130_pca10028;Source Files" name="unnamed" />
+  <ProjectSessionItem path="dfu_dual_bank_ble_s130_pca10028;dfu_dual_bank_ble_s130_pca10028;System Files" name="unnamed" />
+ </Project>
+ <Register1>
+  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" name="dfu_dual_bank_ble_s130_pca10028" />
+ </Register1>
+ <Register2>
+  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" name="dfu_dual_bank_ble_s130_pca10028" />
+ </Register2>
+ <Register3>
+  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" name="dfu_dual_bank_ble_s130_pca10028" />
+ </Register3>
+ <Register4>
+  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" name="dfu_dual_bank_ble_s130_pca10028" />
+ </Register4>
+ <TargetWindow programAction="" uploadFileType="" programLoadAddress="" programSize="" uploadFileName="" uploadMemoryInterface="" programFileName="" uploadStartAddress="" programFileType="" uploadSize="" programMemoryInterface="" />
+ <TraceWindow>
+  <Trace enabled="Yes" />
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never" />
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never" />
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never" />
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never" />
+ </Watch4>
+ <Files>
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="../../../main.c" y="201" path="../../../main.c" left="0" selected="0" name="unnamed" top="177" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="../../../../../../components/device/nrf51.h" y="118" path="../../../../../../components/device/nrf51.h" left="0" selected="0" name="unnamed" top="79" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="../../../../../../components/libraries/bootloader_dfu/bootloader_util.c" y="97" path="../../../../../../components/libraries/bootloader_dfu/bootloader_util.c" left="0" selected="0" name="unnamed" top="78" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="dfu_types.h" y="37" path="dfu_types.h" left="0" selected="0" name="unnamed" top="24" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/nksl6/AppData/Local/Rowley Associates Limited/CrossWorks for ARM/v3/packages/targets/nRF51/nRF51822_xxAA_MemoryMap.xml" y="0" path="C:/Users/nksl6/AppData/Local/Rowley Associates Limited/CrossWorks for ARM/v3/packages/targets/nRF51/nRF51822_xxAA_MemoryMap.xml" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="93" debugPath="../../../../../../../Common/nRF51822_xxAA_Sections_S130_BLE_BootAppDebug.xml" y="3" path="../../../../../../../Common/nRF51822_xxAA_Sections_S130_BLE_BootAppDebug.xml" left="0" selected="0" name="unnamed" top="3" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="../../../../../../components/libraries/bootloader_dfu/bootloader_settings.c" y="24" path="../../../../../../components/libraries/bootloader_dfu/bootloader_settings.c" left="0" selected="0" name="unnamed" top="6" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="../../../../../../components/libraries/util/app_error.c" y="67" path="../../../../../../components/libraries/util/app_error.c" left="0" selected="0" name="unnamed" top="28" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="4" debugPath="../../../../../../components/libraries/util/app_error_weak.c" y="28" path="../../../../../../components/libraries/util/app_error_weak.c" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="../../../../../../components/drivers_nrf/hal/nrf_gpio.h" y="550" path="../../../../../../components/drivers_nrf/hal/nrf_gpio.h" left="0" selected="0" name="unnamed" top="530" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/nksl6/AppData/Local/Rowley Associates Limited/CrossWorks for ARM/v3/packages/targets/nRF51/nRF51_Startup.s" y="39" path="C:/Users/nksl6/AppData/Local/Rowley Associates Limited/CrossWorks for ARM/v3/packages/targets/nRF51/nRF51_Startup.s" left="0" selected="1" name="unnamed" top="20" />
+  <SessionOpenFile useTextEdit="0" useBinaryEdit="0" codecName="" x="17" debugPath="dfu_dual_bank_ble_s130_pca10028 THUMB Debug/dfu_dual_bank_ble_s130_pca10028.elf" y="736" path="dfu_dual_bank_ble_s130_pca10028 THUMB Debug/dfu_dual_bank_ble_s130_pca10028.elf" left="0" selected="0" name="unnamed" top="708" />
+ </Files>
+ <ARMCrossStudioWindow activeProject="dfu_dual_bank_ble_s130_pca10028" autoConnectTarget="SEGGER J-Link" debugSearchFileMap="../../../ARM/Devices/nRF51822/nrf_gpio.h
+C:/Projects/Projects/ARM/Devices/nRF51822/nrf_gpio.h
+../Common/System/core_cm0.h
+
+../Common/System/core_cmInstr.h
+
+../Common/System/nrf_gpio.h
+
+../nrf51_sdk_v6_0_0_43681/nrf51822/Include/nrf_delay.h
+
+../nrf51_sdk_v6_0_0_43681/nrf51822/Include/nrf_gpio.h
+
+C:/Projects/Projects/NRF GPS tracker/Firmware/Common/SoftwareRtc.c
+
+C:/Projects/Projects/NRF GPS tracker/Firmware/Common/System/crt0.s
+
+C:/Projects/Projects/NRF GPS tracker/Firmware/Common/System/nrf_delay.c
+
+c:/projects/projects/nrf gps tracker/firmware/common/system/nrf_delay.h
+
+C:/Projects/Projects/NRF GPS tracker/Firmware/Common/System/Startup.s
+
+C:/Projects/Projects/NRF GPS tracker/Firmware/Common/System/System.c
+
+C:/Projects/Projects/SensorBand/Firmware/BLE_BootApp/main.c
+C:/Projects/SensorBand/Firmware/BLE_BootApp/main.c
+C:/Users/MAMOTH/AppData/Local/Rowley Associates Limited/CrossWorks for ARM/v3/packages/targets/nRF51/nRF51_Startup.s
+" fileDialogInitialDirectory="C:/Projects/SensorBand/Firmware/BLE_BootApp" fileDialogDefaultFilter="*.c" autoConnectCapabilities="3199" debugSearchPath="" buildConfiguration="THUMB Debug" />
+</session>

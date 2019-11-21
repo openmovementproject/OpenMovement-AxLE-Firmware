@@ -1,0 +1,132 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="dfu_dual_bank_ble_s130_pca10028" target="8" version="2">
+  <project Name="dfu_dual_bank_ble_s130_pca10028">
+    <configuration
+      Name="Common"
+      Placement="Flash"
+      Target="nRF51822_xxAA"
+      arm_architecture="v6M"
+      arm_core_type="Cortex-M0"
+      arm_fpu_type="None"
+      arm_gcc_target="arm-unknown-eabi"
+      arm_linker_heap_size="128"
+      arm_linker_stack_size="2048"
+      arm_simulator_memory_simulation_filename="$(TargetsDir)/nRF51/nRF51SimulatorMemory.dll"
+      arm_simulator_memory_simulation_parameter="nRF51822;0x40000;0x4000"
+      arm_target_interface_type="SWD"
+      arm_target_loader_applicable_loaders="Flash"
+      arm_target_loader_default_loader="Flash"
+      c_additional_options="-fms-extensions;-fomit-frame-pointer"
+      c_preprocessor_definitions="BLE_STACK_SUPPORT_REQD;BOARD_PCA10028;S130;BSP_DEFINES_ONLY;NRF51;SOFTDEVICE_PRESENT;SWI_DISABLE0"
+      c_user_include_directories=".;$(PackagesDir)/CMSIS_4/CMSIS/Include;../../../../../../components/toolchain/CMSIS/Include;../../../config/dfu_dual_bank_ble_s130_pca10028;../../../config;../../../../../../components/ble/ble_services/ble_dfu;../../../../../../components/ble/common;../../../../../../components/device;../../../../../../components/drivers_nrf/common;../../../../../../components/drivers_nrf/config;../../../../../../components/drivers_nrf/delay;../../../../../../components/drivers_nrf/hal;../../../../../../components/drivers_nrf/pstorage;../../../../../../components/libraries/bootloader_dfu;../../../../../../components/libraries/bootloader_dfu/ble_transport;../../../../../../components/libraries/crc16;../../../../../../components/libraries/hci;../../../../../../components/libraries/scheduler;../../../../../../components/libraries/timer;../../../../../../components/libraries/util;../../../../../../components/softdevice/common/softdevice_handler;../../../../../../components/softdevice/s130/headers;../../../../../../components/softdevice/s130/headers/nrf51;../../../../../../components/toolchain;../../../../../bsp"
+      linker_memory_map_file="$(TargetsDir)/nRF51/nRF51822_xxAA_MemoryMap.xml"
+      linker_output_format="hex"
+      linker_section_placement_file="C:\Projects\SensorBand\Firmware\Common\nRF51822_xxAA_Sections_S130_BLE_BootAppDebug.xml"
+      package_dependencies="nRF51"
+      project_directory=""
+      project_type="Executable"
+      property_groups_file_path="$(TargetsDir)/nRF51/propertyGroups.xml"
+      target_get_partname_script="GetPartName()"
+      target_reset_script="Reset()"
+      target_script_file="$(TargetsDir)/nRF51/nRF51_Target.js" />
+    <configuration
+      Name="Flash"
+      arm_target_flash_loader_file_path="$(TargetsDir)/nRF51/Release/Loader.elf"
+      arm_target_loader_can_erase_all="Yes"
+      arm_target_loader_can_lock_all="No"
+      arm_target_loader_can_lock_range="No"
+      arm_target_loader_can_unlock_all="No"
+      arm_target_loader_can_unlock_range="No"
+      target_reset_script="FLASHReset()" />
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+    </folder>
+    <folder Name="System Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+      <file file_name="$(TargetsDir)/nRF51/nRF51_Startup.s" />
+      <file file_name="$(TargetsDir)/nRF51/nRF51822_xxAA_MemoryMap.xml" />
+      <file file_name="../../../../../../../Common/nRF51822_xxAA_Sections_S130_BLE_BootAppDebug.xml" />
+    </folder>
+    <folder Name="Application">
+      <file file_name="../../../dfu_ble_svc.c" />
+      <file file_name="../../../main.c">
+        <configuration Name="Debug" gcc_optimization_level="Debug" />
+      </file>
+      <file file_name="dfu_types.h" />
+    </folder>
+    <folder Name="Device">
+      <file file_name="../../../../../../components/toolchain/arm/arm_startup_nrf51.s">
+        <configuration Name="Common" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/toolchain/system_nrf51.c" />
+    </folder>
+    <folder Name="Documentation">
+      <file file_name="../../../Abstract.txt" />
+      <file file_name="../../../license.txt" />
+    </folder>
+    <folder Name="nRF_BLE">
+      <file file_name="../../../../../../components/ble/common/ble_advdata.c" />
+      <file file_name="../../../../../../components/ble/common/ble_conn_params.c" />
+      <file file_name="../../../../../../components/ble/ble_services/ble_dfu/ble_dfu.c" />
+      <file file_name="../../../../../../components/ble/common/ble_srv_common.c" />
+    </folder>
+    <folder Name="nRF_Drivers">
+      <file file_name="../../../../../../components/drivers_nrf/delay/nrf_delay.c" />
+      <file file_name="../../../../../../components/drivers_nrf/common/nrf_drv_common.c" />
+      <file file_name="../../../../../../components/drivers_nrf/pstorage/pstorage_raw.c" />
+    </folder>
+    <folder Name="nRF_Libraries">
+      <file file_name="../../../../../../components/libraries/util/app_error.c" />
+      <file file_name="../../../../../../components/libraries/util/app_error_weak.c" />
+      <file file_name="../../../../../../components/libraries/scheduler/app_scheduler.c" />
+      <file file_name="../../../../../../components/libraries/timer/app_timer.c" />
+      <file file_name="../../../../../../components/libraries/timer/app_timer_appsh.c" />
+      <file file_name="../../../../../../components/libraries/util/app_util_platform.c" />
+      <file file_name="../../../../../../components/libraries/bootloader_dfu/bootloader.c" />
+      <file file_name="../../../../../../components/libraries/bootloader_dfu/bootloader_settings.c" />
+      <file file_name="../../../../../../components/libraries/bootloader_dfu/bootloader_util.c" />
+      <file file_name="../../../../../../components/libraries/crc16/crc16.c" />
+      <file file_name="../../../../../../components/libraries/bootloader_dfu/dfu_dual_bank.c" />
+      <file file_name="../../../../../../components/libraries/bootloader_dfu/dfu_init_template.c" />
+      <file file_name="../../../../../../components/libraries/bootloader_dfu/dfu_transport_ble.c" />
+      <file file_name="../../../../../../components/libraries/hci/hci_mem_pool.c" />
+      <file file_name="../../../../../../components/libraries/util/nrf_assert.c" />
+    </folder>
+    <folder Name="nRF_SoftDevice">
+      <file file_name="../../../../../../components/softdevice/s130/doc/s130_nrf51_2.0.0_licence_agreement.txt" />
+      <file file_name="../../../../../../components/softdevice/common/softdevice_handler/softdevice_handler.c" />
+      <file file_name="../../../../../../components/softdevice/common/softdevice_handler/softdevice_handler_appsh.c" />
+    </folder>
+    <configuration
+      Name="THUMB Debug"
+      c_preprocessor_definitions="__DEBUG"
+      gcc_entry_point="0x00000000" />
+    <configuration
+      Name="Debug"
+      c_preprocessor_definitions="__DEBUG;_DEBUG;DEBUG"
+      gcc_optimization_level="Debug" />
+  </project>
+  <configuration Name="THUMB Debug" inherited_configurations="THUMB;Debug" />
+  <configuration
+    Name="THUMB"
+    Platform="ARM"
+    arm_instruction_set="Thumb"
+    arm_library_instruction_set="Thumb"
+    c_preprocessor_definitions="__THUMB"
+    hidden="Yes" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None"
+    hidden="Yes" />
+  <configuration
+    Name="THUMB Release"
+    inherited_configurations="THUMB;Release" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="Level 1"
+    gcc_optimization_level="Level 1"
+    hidden="Yes" />
+</solution>

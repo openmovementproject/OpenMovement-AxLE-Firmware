@@ -1,0 +1,9 @@
+.\_build\dfu_ble_svc.o: ..\..\..\dfu_ble_svc.c
+.\_build\dfu_ble_svc.o: ..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_ble_svc.h
+.\_build\dfu_ble_svc.o: ..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h
+.\_build\dfu_ble_svc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\_build\dfu_ble_svc.o: ..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h
+.\_build\dfu_ble_svc.o: ..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h
+.\_build\dfu_ble_svc.o: ..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h
+.\_build\dfu_ble_svc.o: ..\..\..\..\..\..\components\device\nrf.h
+.\_build\dfu_ble_svc.o: ..\..\..\..\..\..\components\device\nrf51.h
